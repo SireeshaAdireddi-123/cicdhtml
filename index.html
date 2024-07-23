@@ -4,52 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Background Image Example</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url('https://github.com/hackerr3/imazes/raw/master/1.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            font-family: 'Pacifico', cursive;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .message {
+            position: absolute;
+            bottom: 40%;
+            right: 40%;
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+            background: linear-gradient(45deg, #ff0000, #ff7300, #fffc00, #00ff00, #00cfff, #8000ff);
+            background-size: 600% 600%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: float 5s ease-in-out infinite, colorChange 5s linear infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+
+        @keyframes colorChange {
+            0% { background-position: 0% 0%; }
+            100% { background-position: 100% 100%; }
+        }
+    </style>
 </head>
-<style>
-   /* styles.css */
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
-
-.background-image {
-    /* Background image URL */
-    background-image: url('https://github.com/SireeshaAdireddi-123/cicdhtml/blob/main/photo/bgpic4.png');
-    /* Make the background image cover the whole container */
-    background-size: cover;
-    /* Ensure the background image is centered */
-    background-position: center;
-    /* Make the background image fixed, so it doesn't scroll with the content */
-    background-attachment: fixed;
-    /* Set the height of the container */
-    height: 100%;
-    /* Add a slight overlay for better readability */
-    background-color: rgba(0, 0, 0, 0.5);
-    background-blend-mode: darken;
-    /* Center the text inside the container */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-}
-
-h1 {
-    font-size: 3em;
-    margin: 0;color: brown;
-}
-
-p {
-    font-size: 1.5em;color: cadetblue;
-}
-
-</style>
 <body>
-    <div class="background-image">
-        <h1>Welcome to My page</h1>
-        <p>smile please</p>
-    </div>
+    <div class="message">Nater Loves Me</div>
 </body>
 </html>
