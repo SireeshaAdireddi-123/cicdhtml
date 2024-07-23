@@ -6,15 +6,18 @@
     <title>Background Image Example</title>
 </head>
 <style>
-    body, html {
+   /* styles.css */
+body, html {
     margin: 0;
     padding: 0;
     height: 100%;
 }
+
 .background-image {
     /* Background image URL */
-    background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fbuffer.com%2Flibrary%2Ffree-images%2F&psig=AOvVaw24W3M6EFIjDubo9-9Qi80G&ust=1721814680393000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMCNp_DxvIcDFQAAAAAdAAAAABAK');    /* Make the background image cover the whole container */
-    background-size:cover;
+    background-image: url('./photos/bg2.jpg');
+    /* Make the background image cover the whole container */
+    background-size: cover;
     /* Ensure the background image is centered */
     background-position: center;
     /* Make the background image fixed, so it doesn't scroll with the content */
@@ -32,13 +35,16 @@
     text-align: center;
     color: white;
 }
+
 h1 {
     font-size: 3em;
-    margin: 0;color: brown;
+    margin: 0;
 }
+
 p {
-    font-size: 1.5em;color: cadetblue;
+    font-size: 1.5em;
 }
+
 </style>
 <body>
     <div class="background-image">
